@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "6a8b9652-6361-40db-b9d3-b35484444743",
+		"name": "API-Weather-Node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "currentWeather",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/currentWeatherPromise",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"currentWeatherPromise"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Async",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Hourly,Karnataka",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
