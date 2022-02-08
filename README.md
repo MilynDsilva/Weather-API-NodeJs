@@ -1,3 +1,3 @@
 # Weather-API-NodeJs
 
-## To run : npx nodemon app.js  
+### To run : npx nodemon app.js  
