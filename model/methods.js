@@ -2,9 +2,10 @@ const express = require('express');
 const routes = express.Router();
 const request = require('request');
 const axios = require('axios');
+const { token }  = require('../token');
 
-const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=24&lon=35&exclude=hourly&appid=f4f12b255ab76e0cec4a75e1e81ff562';
-const urlOne = 'https://api.openweathermap.org/data/2.5/weather?q=Karnataka,in&appid=f4f12b255ab76e0cec4a75e1e81ff562';
+const url = `https://api.openweathermap.org/data/2.5/onecall?lat=24&lon=35&exclude=hourly&appid=${token}`;
+const urlOne = `https://api.openweathermap.org/data/2.5/weather?q=Karnataka,in&appid=${token}`;
 
 const getCurrentWeatherUsingPromise = ()=>{
     axios.get(url)
